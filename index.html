@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d764a4a62b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/Keval_Logo4.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="header-text">
+                <p>Web Developer</p>
+                <h1>Hey, I'm <span>Keval</span><br>Solanki From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img.keval.backrem.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Keval Solanki, currently pursuing my final year in Computer Science at Sigma Institute. With expertise in HTML, CSS, JavaScript, React.js, and Node.js, complemented by hands-on experience in Python with Django, I am keen on excelling as a Full Stack Web Developer. I am driven by a passion for creating engaging and user-friendly web applications. Having honed my skills through practical projects and an internship, I am committed to delivering innovative solutions and contributing positively to the dynamic world of web development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2018</span><br>Completed 10th STD From Uma Vidhyalaya</li>
+                            <li><span>2020</span><br>Completed 11-12th Science From LBS High School</li>
+                            <li><span>2024</span><br>BE Computer Science at Sigma Institute Of Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>SAP Code Unnati-APR 2023</span><br>I have learn in code unnati course about AI/ML, Pyhon, IOT, Cyber Security, Bigdata Analysis and Data Science </li>
+                            <li><span>Infosys Springboard-OCT 2023</span><br>i have Completed full course of HTML CSS and JavaScript</li>
+                            <li><span>Solo Learn</span><br>Python for Data Science, C# , JavaScript Intermediate</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML CSS JavaScript</li>
+                            <li><span>Library</span><br>ReactJs NodeJs</li>
+                            <li><span>OOP</span><br>Python C#</li>
+                            <li><span>Framework</span><br>C#/.Net Python/Django</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="serviecs-list"> 
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi deserunt atque, sequi ducimus accusamus doloribus odio adipisci, consectetur suscipit maxime, accusantium ratione id laboriosam. Modi delectus quas aliquid libero facilis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi deserunt atque, sequi ducimus accusamus doloribus odio adipisci, consectetur suscipit maxime, accusantium ratione id laboriosam. Modi delectus quas aliquid libero facilis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi deserunt atque, sequi ducimus accusamus doloribus odio adipisci, consectetur suscipit maxime, accusantium ratione id laboriosam. Modi delectus quas aliquid libero facilis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Portfolio-------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Product Landing Page</h3>
+                        <p> I designed and developed a captivating landing page showcasing Nike shoes. Leveraging HTML and CSS, I structured the layout using columns, ensuring seamless alignment of components. Additionally, I demonstrated proficiency in basic image editing techniques, such as cropping, to enhance visual appeal. This project highlights my skills in web development and design, particularly in creating engaging product presentations.</p>
+                        <a href="https://github.com/Keval2411/Product_Landing_Page.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Blood Test System</h3>
+                        <p>During my Python with Django internship, I developed a Blood Test System. This project streamlined blood testing procedures, enabling efficient sample management and result tracking. Leveraging Django's framework, I implemented user-friendly interfaces and database management functionalities, enhancing overall healthcare service delivery.</p>
+                        <a href="https://drive.google.com/file/d/1oxlXQfjqBVKHE6WVNvcQd_NSbCjck4dA/view?usp=drive_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Weather Forecast Web App</h3>
+                        <p> I developed a Weather Forecast Website using JavaScript, Node.js, and ReactJS. This web application allows users to check the weather forecast for their location and the next five days. Leveraging real-time data from an API, it provides accurate and timely weather information, enhancing user experience and convenience.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------------Contact----------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>solankikeval43@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8320639704</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/heyitskevall"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/keval-solanki-39113224a"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Keval2411"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="pdf/Keval Solanki_Resume1-1 (1) (1).pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> copyright © KEVAL. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials  </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks= document.getElementsByClassName('tab-links');
+        var tabcontents= document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.left = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzVz2bdGQDB9ep2LbLrSpJlFORY7L3cpd_DfCzuPYqNCgPqA8nBLZsDf9C6A6ZtUzCSnQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
